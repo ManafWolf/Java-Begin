@@ -5,7 +5,7 @@ Button But1;
 Button But2;
 Button But3;
 
-void setup() { 
+void setup() {
   size(400, 450);
   background(255, 255, 255);
   cp = new ControlP5(this);
@@ -14,30 +14,35 @@ void setup() {
   But1 = cp.addButton("Button1")
     .setPosition(50, 100)
     .setSize(100, 100)
+    .setColorBackground(color(57,57,57))
+    .setColorForeground(color(98,98,98))
+    .setColorActive(color(155,155,155))
     .setCaptionLabel("Rock");
-    cp.getController("button1");
+  cp.getController("button1");
 
   But2 = cp. addButton("Button2")
     .setPosition(160, 100)
     .setSize(100, 100)
+    .setColorBackground(color(57,57,57))
+    .setColorForeground(color(98,98,98))
+    .setColorActive(color(155,155,155))
     .setCaptionLabel("Paper");
-    cp.getController("button2");
+  cp.getController("button2");
 
   But3 = cp.addButton("Button3")
     .setPosition(270, 100)
     .setSize(100, 100)
+    .setColorBackground(color(57,57,57))
+    .setColorForeground(color(98,98,98))
+    .setColorActive(color(155,155,155))
     .setCaptionLabel("Scissors");
-    cp.getController("button3");
-
+  cp.getController("button3");
 }
 
 void draw() {
-
 }
 int streak1;
 String streak2 = "Score " + streak1;
-
-
 
 void Button1() {
   boolean e = true;
